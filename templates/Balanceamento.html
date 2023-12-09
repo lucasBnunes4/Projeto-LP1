@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/styles/style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='../static/imgs/img.jpg') }}">
+    <title>Balanceamento Químico</title>
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="{{ url_for('balanceamento') }}">Balanceamento</a></li>
+                <li><a href="Formúlas.html">Formulas</a></li>
+                <li><a href="Contato.html"></a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="content_Balance">
+        <h1>Balanceamento Químico</h1>
+        <form method="post">
+            <label for="equation">Equação Química:</label>
+            <input type="text" name="equation" required>
+            <button type="submit">Balancear</button>
+        </form>
+        {% if equation %}
+            <p>Equação Química: {{ equation }}</p>
+            <p>Solução: {{ solution }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
+

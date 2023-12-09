@@ -1,0 +1,1900 @@
+body {
+    font-size: 16px;
+    background-color: #000;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJDxZdrt1sbkxfcPQ4AAAlheE7sIAppomxDA&usqp=CAU);
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: 14px;
+    }
+}
+    
+
+        header {
+    background-color: black;
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -9px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+   
+   img {
+    max-width: 100%;
+    height: auto;
+}
+ 
+/* header {
+   
+    background-image: url('img1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black; /* Ajuste conforme necessário para legibilidade */
+
+    /* Outros estilos para o header */    
+
+
+/* Estilos para telas maiores */
+@media only screen and (min-width: 600px) {
+    header {
+        /* Outros estilos para o header em telas maiores, se necessário */
+        
+    background-color: black;
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -9px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    }
+}
+
+/* Estilos para telas menores ou iguais a 600px */
+@media only screen and (max-width: 600px) {
+    header {
+        
+        /* Outros estilos para o header em telas menores, se necessário */
+        background-color: black;
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -9px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    }
+}
+
+
+/* Estilos para telas maiores */
+@media only screen and (min-width: 601px) {
+    header img {
+        max-width: 150px;
+    }
+}
+
+/* Estilos para telas menores ou iguais a 600px */
+@media only screen and (max-width: 600px) {
+    header img {
+        max-width: 100px;
+    }
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white; /* Cor dos links padrão */
+    font-weight: bold; /* Peso da fonte */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilos para links no hover (quando o mouse passa por cima) */
+a:hover {
+    color: lightgray;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+    
+    a {
+        font-size: 18px;
+    }
+}
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas igualmente espaçadas */
+            grid-gap: 6px; /* Espaçamento entre as caixas */
+        }
+
+        .box {
+            margin-top:20px;
+            margin-left:10%;
+            margin-right:40px;
+            padding: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            background: rgba(50, 50, 50, 0.12); /* Tom de cinza escuro com opacidade de 0.8 para simular vidro transparente */
+            color: white; /* Cor do texto dentro da caixa */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Sombra com opacidade para destacar a caixa */
+            backdrop-filter: blur(10px); /* Adiciona um efeito de desfoque à borda */
+            text-align: justify;
+        }
+
+        .box-footer{
+            margin-top: 20px;
+            margin-left: 1%;
+            margin-right: 1%;
+            padding: 0px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            background: rgba(50, 50, 50, 0.12);
+            color: white;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            text-align: center;
+
+        }
+        
+      
+
+        .iframe {
+            margin-top:20px;
+            margin-left:18%;
+            margin-right:20px;
+            overflow: hidden;
+            width: 100%;
+            max-width: 800px; /* Ajuste conforme necessário */
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            background: rgba(50, 50, 50, 0.12); /* Tom de cinza escuro com opacidade de 0.12 para simular vidro transparente */
+            color: white; /* Cor do texto dentro da caixa */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Sombra com opacidade para destacar a caixa */
+            backdrop-filter: blur(10px); /* Adiciona um efeito de desfoque à borda */
+        }
+    
+        .iframe iframe {
+            width: 100%; /* Ou a porcentagem desejada */
+            height: 380px; /* Ou ajuste conforme necessário */
+            border: none;
+        }
+        
+        #section {
+        
+        display: contents;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 24vh; /* Ocupa 100% da altura da tela */
+        width:10px;
+        height:10px;
+        margin-top:200px;
+        padding: 1rem;
+    }
+
+    .periodic-table {
+        display: grid;
+        grid-template-columns: repeat(18, 20px); /* Largura fixa de 40px para cada coluna */
+        max-width: 4%;
+        gap:40px;
+        transition: transform 0.2s;
+        margin-bottom: 6px;
+     
+    }
+    
+    .periodic-table.houver {
+            transform: scale(0.5);
+        }
+
+    .element {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 49px;
+        height: 49px;
+        font-size: 0.8rem;
+        flex-grow: 0;
+        margin:3px;        
+    }
+    
+    .element:hover {
+            transform: scale(1.1);
+        }
+
+
+    .element strong {
+        text-align: center; 
+    }
+
+    
+
+    .elemento-1{
+        background-color: #87ceeb;
+        /*  background-color: #ddd9ce; */
+    }
+    
+    
+
+    /* Metais Alcalinos */
+
+
+    .elemento-3 {
+        background-color: #f87026;
+    }
+
+    .elemento-11{
+        background-color: #f87026;
+    
+    }
+
+    .elemento-19{
+        background-color: #f87026;
+    }
+
+    .elemento-37{
+        background-color: #f87026;
+    }
+
+    .elemento-55{
+        background-color: #f87026;
+    }
+    
+    .elemento-87{
+        background-color: #f87026;
+    }
+
+
+
+    /*Cores dos Metais Alcalinos - Terrosos*/
+
+
+
+    .elemento-4 {
+        background-color: #ff8c00;
+    }
+
+    .elemento-12{
+        background-color: #ff8c00;
+    }
+
+    .elemento-20{
+        background-color: #ff8c00;
+    }
+
+    .elemento-38{
+        background-color: #ff8c00;
+    }
+
+    .elemento-56{
+        background-color: #ff8c00;
+    }
+    
+    .elemento-88{
+        background-color: #ff8c00;
+    }
+
+
+
+    /*Cores dos Metais de Transição*/
+
+
+
+    .elemento-21{
+        background-color: #fffd0f; 
+    }
+
+
+    .elemento-22{
+        background-color: #fffd0f; 
+    }
+
+
+    .elemento-23{
+        background-color: #fffd0f; 
+    }
+
+
+    .elemento-24{
+        background-color: #fffd0f; 
+    }
+
+
+    .elemento-25{
+        background-color: #fffd0f; 
+    }
+
+
+    .elemento-26{
+        background-color: #fffd0f; 
+    }
+
+
+
+    .elemento-27{
+        background-color: #fffd0f; 
+    }
+
+
+    .elemento-28{
+        background-color: #fffd0f; 
+    }
+
+
+
+
+    .elemento-29{
+        background-color: #fffd0f; 
+    }
+
+
+    .elemento-30{
+        background-color: #fffd0f; 
+    }
+
+
+    .elemento-39{
+        background-color: #fffd0f; 
+    }
+
+
+
+    .elemento-40{
+        background-color: #fffd0f; 
+    }
+
+
+    .elemento-41{
+        background-color: #fffd0f; 
+    }
+
+
+
+    .elemento-42{
+        background-color: #fffd0f; 
+    }
+
+
+
+
+    .elemento-43{
+        background-color: #fffd0f; 
+    }
+
+
+
+    .elemento-44{
+        background-color: #fffd0f; 
+    }
+
+
+    .elemento-45{
+        background-color: #fffd0f; 
+    }
+
+
+    .elemento-46{
+        background-color: #fffd0f; 
+    }
+
+
+    .elemento-47{
+        background-color: #fffd0f; 
+    }
+
+
+    .elemento-48{
+        background-color: #fffd0f; 
+    }
+
+    
+
+
+
+    .elemento-72{
+        background-color: #fffd0f; 
+    }
+
+
+
+    .elemento-73{
+        background-color: #fffd0f; 
+    }
+
+
+    .elemento-74{
+        background-color: #fffd0f; 
+    }
+
+
+
+    .elemento-75{
+        background-color: #fffd0f; 
+    }
+
+
+
+    .elemento-76{
+        background-color: #fffd0f; 
+    }
+
+
+    .elemento-77{
+        background-color: #fffd0f; 
+    }
+
+
+    .elemento-78{
+        background-color: #fffd0f; 
+    }
+
+
+
+    .elemento-79{
+        background-color: #fffd0f; 
+    }
+
+
+
+    .elemento-80{
+        background-color: #fffd0f; 
+    }
+
+    .elemento-81{
+        background-color: #fffd0f; 
+    }
+
+
+
+
+    .elemento-104{
+        background-color: #fffd0f; 
+    }
+
+
+
+    .elemento-105{
+        background-color: #fffd0f; 
+    }
+
+
+    .elemento-106{
+        background-color: #fffd0f; 
+    }
+
+
+    .elemento-107{
+        background-color: #fffd0f; 
+    }
+
+
+    .elemento-108{
+        background-color: #fffd0f; 
+    }
+
+
+
+
+    .elemento-109{
+        background-color: #fffd0f; 
+    }
+
+
+    .elemento-110{
+        background-color: #fffd0f; 
+    }
+
+
+    .elemento-111{
+        background-color: #fffd0f; 
+    }
+
+
+    .elemento-112{
+        background-color: #fffd0f; 
+    }
+
+
+    /* Cores dos outros metais */ 
+
+    .elemento-13{
+        background-color: #c2e3ed; 
+    }
+
+    .elemento-31{
+        background-color: #c2e3ed; 
+    }
+
+    .elemento-49{
+        background-color: #c2e3ed; 
+    }
+
+
+    .elemento-50{
+        background-color: #c2e3ed; 
+    }
+
+
+    .elemento-81{
+        background-color: #c2e3ed; 
+    }
+
+
+    .elemento-82{
+        background-color: #c2e3ed; 
+    }
+
+
+    .elemento-83{
+        background-color: #c2e3ed; 
+    }
+
+    .elemento-113{
+        background-color: #c2e3ed; 
+    }
+
+
+    .elemento-114{
+        background-color: #c2e3ed; 
+    }
+
+
+    .elemento-115{
+        background-color: #c2e3ed; 
+    }
+
+
+
+    .elemento-116{
+        background-color: #c2e3ed; 
+    }
+
+
+
+
+    /* Cores dos Semi metais */
+
+
+    .elemento-5{
+        background-color: #c0c0c0; 
+    }
+
+
+    .elemento-14{
+        background-color: #c0c0c0; 
+    }
+
+
+    .elemento-32{
+        background-color: #c0c0c0; 
+    }
+
+
+    .elemento-33{
+        background-color: #c0c0c0; 
+    }
+
+
+    .elemento-51{
+        background-color: #c0c0c0; 
+    }
+
+
+    .elemento-52{
+        background-color: #c0c0c0; 
+    }
+
+
+    .elemento-84{
+        background-color: #c0c0c0; 
+    }
+
+
+
+    /* Cores dos Não metais */
+
+
+    .elemento-6{
+        background-color: #87ceeb; 
+    }
+
+
+    .elemento-7{
+        background-color: #87ceeb; 
+    }
+
+
+    .elemento-8{
+        background-color: #87ceeb; 
+    }
+
+
+    .elemento-15{
+        background-color: #87ceeb; 
+    }
+
+
+    .elemento-16{
+        background-color: #87ceeb; 
+    }
+
+
+    .elemento-34{
+        background-color: #87ceeb; 
+    }
+
+
+    /* Cores dos Halogenios */
+
+
+    .elemento-9{
+        background-color: #ff47a6; 
+    }
+
+
+    .elemento-17{
+        background-color: #ff47a6; 
+    }
+
+
+    .elemento-35{
+        background-color: #ff47a6; 
+    }
+
+
+    .elemento-53{
+        background-color: #ff47a6; 
+    }
+
+
+    .elemento-85{
+        background-color: #ff47a6; 
+    }
+
+
+    .elemento-117{
+        background-color: #ff47a6; 
+    }
+
+
+
+
+    /* Cores dos Gases Nobres */
+
+
+
+
+    .elemento-2{
+        background-color: #c90dc9; 
+    }
+
+
+
+    .elemento-10{
+        background-color: #c90dc9; 
+    }
+
+
+    .elemento-18{
+        background-color: #c90dc9; 
+    }
+
+
+    .elemento-36{
+        background-color: #c90dc9; 
+    }
+
+
+
+    .elemento-54{
+        background-color: #c90dc9; 
+    }
+
+
+    .elemento-86{
+        background-color: #c90dc9; 
+    }
+
+
+    .elemento-118{
+        background-color: #c90dc9; 
+    }
+
+
+    /* Cores dos Lantanideos */
+
+
+    .elemento-57-71{
+        background-color: #ffeaa7; 
+    }
+
+
+    .elemento-57{
+        background-color: #ffeaa7; 
+    }
+
+
+    .elemento-58{
+        background-color: #ffeaa7; 
+    }
+
+
+    .elemento-59{
+        background-color: #ffeaa7; 
+    }
+
+
+
+    .elemento-60{
+        background-color: #ffeaa7; 
+    }
+
+
+    .elemento-61{
+        background-color: #ffeaa7; 
+    }
+
+
+
+    .elemento-62{
+        background-color: #ffeaa7; 
+    }
+
+
+    .elemento-63{
+        background-color: #ffeaa7; 
+    }
+
+
+
+    .elemento-64{
+        background-color: #ffeaa7; 
+    }
+
+
+
+    .elemento-65{
+        background-color: #ffeaa7; 
+    }
+
+
+
+    .elemento-66{
+        background-color: #ffeaa7; 
+    }
+
+
+
+    .elemento-67{
+        background-color: #ffeaa7; 
+    }
+
+
+    .elemento-68{
+        background-color: #ffeaa7; 
+    }
+
+
+    .elemento-69{
+        background-color: #ffeaa7; 
+    }
+
+
+    .elemento-70{
+        background-color: #ffeaa7; 
+    }
+
+
+    .elemento-71{
+        background-color: #ffeaa7; 
+    }
+
+
+
+    /* Cores dos Acnideos */
+
+
+
+    .elemento-89-103{
+        background-color: #fdc6cd; 
+    }
+
+    .elemento-89{
+        background-color: #fdc6cd; 
+    }
+
+    .elemento-90{
+        background-color: #fdc6cd; 
+    }
+
+
+    .elemento-91{
+        background-color: #fdc6cd; 
+    }
+
+    .elemento-92{
+        background-color: #fdc6cd; 
+    }
+
+
+    .elemento-93{
+        background-color: #fdc6cd; 
+    }
+
+    .elemento-94{
+        background-color: #fdc6cd; 
+    }
+
+
+    .elemento-95{
+        background-color: #fdc6cd; 
+    }
+
+    .elemento-96{
+        background-color: #fdc6cd; 
+    }
+
+
+    .elemento-97{
+        background-color: #fdc6cd; 
+    }
+
+    .elemento-98{
+        background-color: #fdc6cd; 
+    }
+
+
+    .elemento-99{
+        background-color: #fdc6cd; 
+    }
+
+
+    .elemento-100{
+        background-color: #fdc6cd; 
+    }
+
+
+    .elemento-101{
+        background-color: #fdc6cd; 
+    }
+
+
+    .elemento-102{
+        background-color: #fdc6cd; 
+    }
+
+    .elemento-103{
+        background-color: #fdc6cd; 
+    }
+
+    .nova {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 1px;
+        height:94px;
+        font-size: 0.8rem;
+       
+       
+    }
+
+    .element .numero_atomico {
+        text-align: left;
+        margin-left: -29px;
+        margin-top: 1px;
+        font-weight: normal;
+       
+
+    }
+    
+    .massa{
+    	font-size:0.8rem;
+    }
+
+    .element .Hidrogenio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+    
+    
+    .element .Helio{
+    text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+    /* Metais Alcalinos */
+
+
+    .element .Litio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+    .element .sodio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+    .element .Potacio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+    .element .Rubidio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+    .element .Cesio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+    .element .Francio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+    /* Metais Alcalinos - Terrosos*/
+
+
+
+    .element .Berilio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+    .element .Magnesio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+    .element .Calcio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+    .element .Estroncio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+    .element .Bario{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+    .element .Radio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+    /* Metais de Transição  */
+
+    .element .Escandio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+    .element .Titaneo{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+    .element .Vanadio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+    .element .Cromo{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+    .element .Manganes{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+    .element .Ferro{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+    .element .Cobalto{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+    .element .Niquel{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+    .element .Cobre{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+    .element .Zinco{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+    .element .Itrio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+    .element .Zirconio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+    .element .Niobio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+    .element .Molibdenio{
+    text-align: center;
+    margin-left: 1px;
+    margin-top: -4px;
+    margin-bottom:-1px;
+    font-weight: bold;
+    }
+
+    .element .Tecnecio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+
+    }
+
+    .element .Rutenio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+
+    }
+
+    .element .Rodio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+
+    }
+
+    .element .Chumbo{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+
+    }
+
+    .element .Prata{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+
+    }
+
+
+    .element .Cadmio{
+    text-align: center;
+    margin-left: 1px;
+    margin-top: -4px;
+    margin-bottom:-1px;
+    font-weight: bold;
+
+    }
+
+
+    .element .Hafnio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    
+    }
+
+
+    .element .Tantalo{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    
+    }
+
+
+
+    .element .Tungstenio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    
+    }
+
+
+    .element .Renio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    
+    }
+
+
+
+    .element .Osnio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    
+    }
+
+
+
+    .element .Iridio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    
+    }
+
+
+
+    .element .Platina{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    
+    }
+
+
+
+    .element .Ouro{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    
+    }
+
+
+    .element .Mercurio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    
+    }
+
+
+
+    .element .Rutherfordio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    
+    }
+
+
+
+    .element .Dubnio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    
+    }
+
+
+    .element .Seaborgio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    
+    }
+
+
+
+    .element .Bohrio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    
+    }
+
+    .element .Hassio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+
+    .element .Meitnerio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+    
+
+    .elemento .Darmstádtio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    
+    }
+
+
+  
+    .element .Roentgenio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+
+
+
+    .element .Copernicio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+    /*Pos Metais */
+
+    .element .Aluminio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+
+    .element .Galio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+    .element .Indium{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+
+    .element .Estanho{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+
+    .element .Titaneo{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+
+    .element .Chumbo{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+
+    .element .Bismuto{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+
+    .element .Nihonio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+
+    .element .Flerovio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+
+    .element .Moscovio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+
+    .element .Livermorio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+
+
+    /* Semi metais */
+
+
+
+    .element .Boro{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+    .element .Silicio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+
+    .element .Germanio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+    .element .Arsenio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+    .element .Antimonio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+    .element .Telurio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+    .element .Polonio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+
+    /* Não metais */ 
+
+
+
+    .element .Carbono{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+    .element .Nitrogenio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+
+    .element .Oxigenio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+
+    .element .Fosforo{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+    .element .Enxofre{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+    .element .Selenio{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+    /* Harmonios */
+
+
+    .element .Fluor{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+
+    .element .Cloro{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+
+    .element .Bromo{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+
+
+    .element .Iodo{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+
+    .element .Astato{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+
+    .element .Tenesso{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+    /* Lantanídeos  */
+
+
+    .element .Lantanídeos{
+        text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+    
+    
+    .element .Litio{
+     text-align: center;
+        margin-left: 1px;
+        margin-top: -4px;
+        margin-bottom:-1px;
+        font-weight: bold;
+    }
+
+
+     .container_tabela{
+            background-color: green;
+	  color: #000;
+	  padding: 75px;
+	  
+	  justify-content: space-between;
+	  align-items: center;
+	  margin-right: 10px;
+	  margin-left: 10px;
+	  margin-top: 2px;
+	  overflow: scroll;
+	  background-image: url("../imgs/img1.jpg");
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  z-index: 1;
+	  height: 41vh;
+	}
+        .title_legenda {
+            padding: 1px;
+            text-align: center;
+            flex-shrink: 0; /* Impede que o título encolha */
+        }
+
+        .elemento {
+            display: flex;
+            align-items: center;
+            flex-shrink: 0; /* Impede que os elementos encolham */
+            margin-right: 20px; /* Aumenta a margem entre os elementos */
+        }
+
+        .cor {
+            width: 20px;
+            height: 16px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            margin-right: 17px;
+        }
+
+       .Metais-alcalinos{
+            background-color:#f87026;
+       }
+
+        .Metais-alcalinos-terrosos {
+            background-color: #ff8c00;
+        }
+        
+        .Metais-Transicao{
+            background-color:#fffd0f;
+        }
+        
+        .Pos-Metais{
+            background-color:#c2e3ed;
+        }
+        
+        .Semimetais{
+            background-color:#c0c0c0
+        }
+        
+        .Nao-metais{
+            background-color:#87ceeb
+        }
+        
+        .Halogenio{
+            background-color:#ff47a6;
+        }
+        
+        .Gases-Nobres{
+            background-color:#c90dc9;
+        }
+
+       .Lantanideo{
+            background-color:#ffeaa7;
+       }
+       
+       .Actinideo{
+      	    background-color:#fdc6cd
+	}
+      
+	h2 {
+	    text-align:center;
+	    margin-top: 9px;
+	}	
+	
+	#explicação{
+	     
+	     text-align:center;
+	     margin-left: 50px;
+	  border: 1px solid black;
+	  margin-right: 40px;
+	  margin-top: 100px;
+	  padding: 50px;
+	}
+	
+	.content_texto{
+		background-color: pink;
+		padding:57px;
+		border: 2px solid black;
+		margin-bottom:1px;
+		margin-top:1px;
+		margin-right:40px;
+		margin-left:47px;
+	}
+	
+	.titulo-estilizado_Legend .text_legend{
+	       text-align: center;
+		  background-color: red;
+		  
+		  padding: 3px;
+		  backdrop-filter: blur(10px);
+		  margin-left: 242px;
+		  margin-bottom: 33px;
+		  background: linear-gradient(to right, #ffffff6e, #800080e5);
+		}
+		
+	.futua{
+		float:center;
+		margin-left:32px;
+	}
+	
+	.itens_legegenda{
+		float:center;
+		margin-left:32px;
+		display:flex;
+	}
+	
+	#itens{
+		float:right;
+		margin-left: 66px;
+	}
+	
+	#borda_legend{
+	 	border: 1px;
+  		background: linear-gradient(90deg, rgba(128, 0, 128, 0.5), rgba(247, 247, 247, 0.5));
+  		margin:-52px;
+	}
+	
+	
+	div.sem{
+		border: 1px solid white;
+  margin-bottom: 1%;
+  padding: 5%;
+  margin-right: 3%;
+  margin-left: 3%;
+  background: linear-gradient(9deg, rgba(128, 0, 128, 0.79), rgb(255,255,255));
+}
+	
+	iframe {
+    border: none; /* Remove a borda padrão do iframe */
+    width: 298px; /* Defina a largura desejada */
+    height: 325px; /* Defina a altura desejada */
+}
+
+    .content_Balance{
+        
+        margin-top: 20px;
+        margin-left: 10%;
+        margin-right: 40px;
+        padding: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        background: rgba(50, 50, 50, 0.12);
+        color: white;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(10px);
+        text-align: justify;
+}
+
+    
